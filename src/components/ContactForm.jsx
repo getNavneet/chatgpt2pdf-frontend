@@ -10,7 +10,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState(''); // 'success' or 'error'
 
-  const apiBaseUrl = 'http://localhost:3000/contact/';
+  const apiBaseUrl = 'https://api.rugdi.in/contact';
 
   const onSubmit = async (data) => {
     try {

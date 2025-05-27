@@ -12,7 +12,7 @@ const ConverterCard = () => {
   const [jobId, setJobId] = useState(null);
   const [loadingMsg, setLoadingMsg] = useState('Converting your conversation to PDF...');
   // Use environment variable or EC2 HTTPS URL
-  const apiBaseUrl = 'http://13.232.158.1:3000/api';
+  const apiBaseUrl = 'https://api.rugdi.in/api';
         const attemptsRef = useRef(0); // persists across renders
 
 
