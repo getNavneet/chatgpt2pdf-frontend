@@ -104,32 +104,32 @@ const ChromeExtension = () => {
             </div>
           </div>
           
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl inline-block">
-            <p className="text-gray-600 dark:text-gray-300 font-medium">
-              🚀 Join the waitlist to be notified when we launch!
-            </p>
-            <div className="mt-4 flex justify-center space-x-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-                className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              />
-              <button
-                onClick={submitMail}
-                disabled={isSubmitting}
-                className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors"
-              >
-                {isSubmitting ? 'Submitting...' : 'Notify Me'}
-              </button>
-            </div>
-            {message && (
-              <div className={`mt-4 p-4 rounded-lg ${messageType === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-                {message}
-              </div>
-            )}
-          </div>
+         <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl inline-block w-full box-border overflow-x-hidden">
+  <p className="text-gray-600 dark:text-gray-300 font-medium">
+    🚀 Join the waitlist to be notified when we launch!
+  </p>
+  <div className="mt-4 flex flex-wrap justify-center items-center space-x-4 space-y-4 sm:space-y-0">
+    <input
+      type="email"
+      placeholder="Enter your email"
+      onChange={(e) => setEmail(e.target.value)}
+      value={email}
+      className="w-full sm:w-auto px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    />
+    <button
+      onClick={submitMail}
+      disabled={isSubmitting}
+      className="w-full sm:w-auto py-2 px-6  bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors"
+    >
+      {isSubmitting ? 'Submitting...' : 'Notify Me'}
+    </button>
+  </div>
+  {message && (
+    <div className={`mt-4 p-4 rounded-lg ${messageType === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+      {message}
+    </div>
+  )}
+</div>
         </div>
       </div>
     </section>
