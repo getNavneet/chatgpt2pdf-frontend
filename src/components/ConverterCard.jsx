@@ -213,6 +213,24 @@ const ConverterCard = () => {
               )}
             </div>
 
+ {status === 'timeout' && (
+  <div className="flex flex-col items-center text-center py-8 space-y-3">
+    <AlertCircle className="h-12 w-12 text-red-500" />
+    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+      Conversion Timeout
+    </h3>
+    <p className="text-gray-300 dark:text-gray-300">
+      😔 Sorry, there is a problem at our end.
+    </p>
+    <p className="text-gray-600 dark:text-gray-300">
+      Please give us your valuable feedback so we can improve our service.
+    </p>
+    <Button variant="primary" onClick={resetForm}>
+      Try Again
+    </Button>
+  </div>
+)}
+
             <div className="bg-gray-50 dark:bg-gray-900/50 px-6 py-4 sm:px-8">
               <div className="flex items-center">
                 <AlertCircle className="h-5 w-5 text-blue-500 mr-2" />
