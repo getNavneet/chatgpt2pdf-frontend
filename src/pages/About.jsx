@@ -48,7 +48,7 @@ const About = () => {
 
             <h2 className="text-2xl font-bold text-gray-300 mb-4">The Team</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              Our team consists of passionate developers and designers who believe in the power of AI to transform how we work and learn. We're constantly working to improve our tools and create new features that make your experience better.
+              This project is developed from scratch by <a href="https://www.linkedin.com/in/getnavneet/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Navneet</a>, a passionate developer dedicated to creating tools that enhance productivity and collaboration in the digital age. With a focus on simplicity and user experience, Navneet aims to make AI tools accessible to everyone.
             </p>
 
             <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 mb-8">
