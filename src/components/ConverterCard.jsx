@@ -66,7 +66,7 @@ const ConverterCard = () => {
       }
 
       setTimeout(checkStatus, 2000); // Retry in 2s
-    } else {
+    } else if(attemptsRef.current > maxAttempts) {
       setStatus('timeout');
     }
   } catch (err) {
