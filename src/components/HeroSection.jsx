@@ -6,7 +6,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
   
   return (
-    <section className="py-14 sm:py-20">
+    <section className="pt-14 pb-5 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center mb-2">
           <div className="relative">
@@ -14,10 +14,10 @@ const HeroSection = () => {
             <div className="absolute -right-2 -top-2 w-6 h-6 bg-purple-500 rounded-full animate-pulse"></div>
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 mt-2">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 mt-2">
           ChatGPT to PDF Converter
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-6">
           {/* Transform your ChatGPT conversations into beautifully formatted PDF documents with just one click. */}
           Save, share, and archive your AI interactions with ease.
         </p>

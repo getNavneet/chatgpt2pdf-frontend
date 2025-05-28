@@ -8,7 +8,7 @@ const ConverterCard = () => {
   const [chatGptUrl, setChatGptUrl] = useState('');
   const [status, setStatus] = useState('idle');
   const [error, setError] = useState('');
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
   const [jobId, setJobId] = useState(null);
   const [loadingMsg, setLoadingMsg] = useState('Converting your conversation to PDF...');
   // Use environment variable or EC2 HTTPS URL
@@ -107,7 +107,7 @@ const ConverterCard = () => {
         <div className="max-w-2xl mx-auto">
           <div className="bg-white dark:bg-gray-700 rounded-xl shadow-xl overflow-hidden transform transition-all hover:shadow-2xl">
             <div className="p-6 sm:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-lg md:text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Convert Your Conversation
               </h2>
 
